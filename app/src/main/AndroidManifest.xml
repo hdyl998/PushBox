@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hdyl.pushbox">
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--  <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" /> -->
+
+    <application
+        android:allowBackup="true"
+        android:name="com.hdyl.pushbox.base.MyApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppBaseTheme">
+        <activity
+            android:name="com.hdyl.pushbox.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hdyl.pushbox.LevelActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hdyl.pushbox.StartActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hdyl.pushbox.tuijian.TuijianAcitivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hdyl.pushbox.WebActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hdyl.pushbox.soko.SokoCollectionListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hdyl.pushbox.setting.SettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hdyl.pushbox.soko.SokoLevelListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hdyl.pushbox.soko.SokoGameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hdyl.pushbox.file.MyFileListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hdyl.pushbox.base.FragmentHolderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.hdyl.pushbox.SoundService" >
+        </service>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57be929c67e58e154b0001e4" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+
+    </application>
+
+</manifest>

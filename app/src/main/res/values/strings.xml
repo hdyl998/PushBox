@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">推箱子</string>
+    <string name="action_settings">"使用完全免费，请放心使用!\n作者:寒冬已至\n986850427@qq.com\nVerson:3.0全新改版，大量的功能扩展来袭，你能HOLO得住么？！\n新增SOKO关卡，支持标准SLC、XSB、LP0、SOK格式关卡文件，读取，导入，通关数据存档，解法演示，解法复制、粘帖功能，全部关卡列表、视图浏览两种模式，通关方案动画演示，背景更换，皮肤更换，更多功能尽在后续的版本改进中...\n欢迎邮件我...986850427@qq.com"</string>
+    <string name="hello_world">Hello world!</string>
+</resources>
